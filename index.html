@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <header id="header">
-      <h2 id="product-title">Microverse</h2>
-      <img src="https://assets-global.website-files.com/5dbb30f00775d4350591a4e5/6336e01ef28c9432e8ee9e6b_untitled-design-1.webp" alt="" id="header-img">
-      <nav id="nav-bar">
-        <a class="nav-link" href="#section1">Section 1</a>
-        <a class="nav-link" href="#section1">Section 1</a>
-        <a class="nav-link" href="#section1">Section 1</a>
-      </nav>
-    </header>
-    <div class="main">
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <header id="header">
+    <h2 id="product-title">Microverse</h2>
+    <img
+      src="https://assets-global.website-files.com/5dbb30f00775d4350591a4e5/6336e01ef28c9432e8ee9e6b_untitled-design-1.webp"
+      alt="" id="header-img">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#section1">Section 1</a>
+      <a class="nav-link" href="#section1">Section 1</a>
+      <a class="nav-link" href="#section1">Section 1</a>
+    </nav>
+  </header>
+  <div class="main">
+    <div class="cointainer">
       <div class="col left-col">
         <section id="section1">
-          <video src="https://www.youtube.com/watch?v=yYc48hxdTjo" id="video"></video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yYc48hxdTjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <h3 id="video-title">How Microverse works</h3>
           <p id="video-description">Watch this short video to learn more about us</p>
         </section>
@@ -31,16 +35,24 @@
           <h3 id="product-description">We're Microverse</h3>
           <p id="product-description">Thinked for developers</p>
         </section>
-        <section id="section3">
-          <form action="">
-            <label for="email">Sing up to get the latest updates on this item!</label>
-            <input type="email" id="email" required>
-            <input type="submit" id="submit" value="submit">
-          </form>
-        </section>
       </div>
+      
     </div>
-    <script  src="js/index.js"></script>
-    
-  </body>
+  </div>
+
+  <div class="col right-col">
+
+    <section id="section3">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Sing up to get the latest updates on this item!</label>
+        <input type="email" id="email" placeholder="Typer your email" name="email" required>
+        <input type="submit" id="submit" value="submit">
+      </form>
+    </section>
+  </div>
+  </div>
+  <script src="js/index.js"></script>
+
+</body>
+
 </html>
