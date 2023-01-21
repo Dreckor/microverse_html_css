@@ -7,8 +7,10 @@ body {
     width: 100vw;
     /* justify-content: center; */
     align-items: center;
+    /* justify-content: space-around; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#product-title{
+h1 {
     color: #fff;
     font-size: 100px;
     padding: 20px;
@@ -21,6 +23,8 @@ header {
     background-color: #6c33fc;
     margin-top: 1.5vh;
     display: flex;
+    /* flex-direction: column; */
+    margin-bottom: 3vh;
     justify-content: space-between;
 }
 
@@ -49,7 +53,40 @@ header > img {
 }
 
 .container{
-    display: flexbox;
-    align-items: center;
+    display: flex;
+    align-items: stretch;
     justify-content: space-around;
+    width: 100%;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section3 {
+    background-color: #6c33fc;
+    height: max-content;
+    padding: 3em;
+    
+}
+
+#section3 > form {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4em;
+}
+
+#section3 > form > div {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
 }
