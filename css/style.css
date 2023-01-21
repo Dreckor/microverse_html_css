@@ -49,7 +49,7 @@ header > img {
 }
 
 .container{
-    display: flex;
+    display: flexbox;
     align-items: center;
     justify-content: space-around;
 }
