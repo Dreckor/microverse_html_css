@@ -21,35 +21,30 @@
       <a class="nav-link" href="#section1">Section 1</a>
     </nav>
   </header>
-  <div class="main">
-    <div class="cointainer">
-      <div class="col left-col">
-        <section id="section1">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/yYc48hxdTjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <h3 id="video-title">How Microverse works</h3>
-          <p id="video-description">Watch this short video to learn more about us</p>
-        </section>
-      </div>
-      <div class="col right-col">
-        <section id="section2">
-          <h3 id="product-description">We're Microverse</h3>
-          <p id="product-description">Thinked for developers</p>
-        </section>
-      </div>
-      
+  <div class="container">
+    <div class="col left-col">
+      <section id="section1">
+        <video id="video" width="560" height="315" controls>
+          <source src="https://www.youtube.com/embed/yYc48hxdTjo" /> 
+        </video>
+        <h3 id="video-title">How Microverse works</h3>
+        <p id="video-description">Watch this short video to learn more about us</p>
+      </section>
     </div>
-  </div>
-
-  <div class="col right-col">
-
-    <section id="section3">
-      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-        <label for="email">Sing up to get the latest updates on this item!</label>
-        <input type="email" id="email" placeholder="Typer your email" name="email" required>
-        <input type="submit" id="submit" value="submit">
-      </form>
-    </section>
-  </div>
+    <div class="col right-col">
+      <section id="section2">
+        <h3 id="product-description">We're Microverse</h3>
+        <p id="product-description">Thinked for developers</p>
+      </section>
+  
+      <section id="section3">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <label for="email">Sing up to get the latest updates on this item!</label>
+          <input type="email" id="email" placeholder="Typer your email" name="email" required>
+          <input type="submit" id="submit" value="submit">
+        </form>
+      </section>
+    </div>
   </div>
   <script src="js/index.js"></script>
 
