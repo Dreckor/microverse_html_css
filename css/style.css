@@ -10,7 +10,7 @@ body {
     /* justify-content: space-around; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#product-title{
+h1 {
     color: #fff;
     font-size: 100px;
     padding: 20px;
@@ -23,12 +23,9 @@ header {
     background-color: #6c33fc;
     margin-top: 1.5vh;
     display: flex;
-<<<<<<< HEAD
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-bottom: 3vh;
-=======
     justify-content: space-between;
->>>>>>> 3f025e36b919802bdc70a1f8b31334d9fb6802a9
 }
 
 nav {
@@ -65,4 +62,31 @@ header > img {
 .right-col {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+#section3 {
+    background-color: #6c33fc;
+    height: max-content;
+    padding: 3em;
+    
+}
+
+#section3 > form {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4em;
+}
+
+#section3 > form > div {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
 }
